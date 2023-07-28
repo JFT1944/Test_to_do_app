@@ -45,8 +45,8 @@ console.log(todo)
         <div style={{width:"30%", height:'3px', background:"#292639"}}></div>
         
         {/* <div style={{}}> */}
-        <div style={{'overflow-y':'scroll', height:' calc(100vh - 284px)', position:'fixed', bottom:'20px'}}>
-            {!todo ? "loading" : todo.map((x,y) => <ToDoComponent data={x} num={y} formType={formType} setFormType={setFormType} editId={editId} setEditId={setEditId}/>)}
+        <div style={{'overflowY':'scroll', height:' calc(100vh - 284px)', position:'fixed', bottom:'20px'}}>
+            {!todo ? "loading" : todo.map((x,y) => <ToDoComponent key={y} data={x} num={y} formType={formType} setFormType={setFormType} editId={editId} setEditId={setEditId}/>)}
         </div>
         <div style={{height:'20px'}}></div>
         </div>
