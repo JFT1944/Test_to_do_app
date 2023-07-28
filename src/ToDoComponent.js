@@ -32,7 +32,7 @@ function openMiniMenu(e){
             
             <div className="list_item">{data.title}</div>
             <div className="list_user">
-                <span>{`User:${data.userId}`}</span>
+                <span>{`User: ${data.userId}`}</span>
             </div>
             {data.completed ? "" : <div className="list_menu" onClick={(e) => openMiniMenu(e)}><div className="dots"></div><div className="dots"></div><div className="dots"></div></div>}
         </div>
