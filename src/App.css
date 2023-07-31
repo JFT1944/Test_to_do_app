@@ -1,6 +1,15 @@
+html{
+background: #070417;  
+overscroll-behavior: none;
+}
+
+body{
+  overscroll-behavior: none;
+}
+
 .App {
   width: 100vw;
-  position: relative;
+  position: fixed;
   text-align: center;
   background: #070417;
   /* background: green; */
@@ -93,6 +102,8 @@ margin: 151px 0 0 0;
   height: 52px;
   /* background: #282c34; */
   margin: 20px 0;
+  display: flex;
+  justify-content: center;
 
 }
 .search_bar > form {
